@@ -1,0 +1,14 @@
+name: Workflow
+
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  hello_job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: WelcomeStep
+        run: echo "Allah is greatest"
